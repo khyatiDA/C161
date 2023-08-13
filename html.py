@@ -31,7 +31,7 @@ def openFile():
     global name
     textArea.delete(1.0 , END)
     input.delete(0 , END)
-    html_file = filedialog.askopenfilename(title = "OPEN HTML FILE" , filrtypes = (("Html Files" , "*.html"),))
+    html_file = filedialog.askopenfilename(title = "OPEN HTML FILE" , filetypes = (("Html Files" , "*.html"),))
     print(html_file)
     name = os.path.basename(html_file)
     formated_name = name.split('.')[0]
